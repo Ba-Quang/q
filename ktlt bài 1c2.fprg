@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ktlt b&#224;i 1c2"/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-28 11:15:31 AM"/>
+        <attribute name="created" value="QWRtaW47QURNSU47MjAyNS0wMi0yODsxMToxMDozNiBBTTsyMTEy"/>
+        <attribute name="edited" value="QWRtaW47QURNSU47MjAyNS0wMi0yODsxMToxNTozMSBBTTsxOzIyMjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="This function has one parameter called radius. It acts like a local variable that is assigned when the function is called."/>
+            <declare name="Area" type="Real" array="False" size=""/>
+            <assign variable="area" expression="pi*radius^2"/>
+            <comment text=""/>
+        </body>
+    </function>
+    <function name="Circle" type="Real" variable="Area">
+        <parameters>
+            <parameter name="Radius" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <comment text="This function has one parameter called radius. It acts like a local variable that is assigned when the function is called."/>
+        </body>
+    </function>
+</flowgorithm>
