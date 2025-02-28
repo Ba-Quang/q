@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="ktlt dtvt 2025"/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-28 11:15:35 AM"/>
+        <attribute name="created" value="QWRtaW47QURNSU47MjAyNS0wMi0yODswNzozNzo0NiBBTTsyMTI3"/>
+        <attribute name="edited" value="QWRtaW47QURNSU47MjAyNS0wMi0yODsxMToxNTozNSBBTTszOzIyMjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="area" type="Real" array="False" size=""/>
+            <declare name="radius" type="Integer" array="False" size=""/>
+            <output expression="&quot;please enter the radius of a circle&quot;" newline="True"/>
+            <input variable="radius"/>
+            <assign variable="area" expression="3.14*radius^2"/>
+            <output expression="&quot;The area is&quot;&amp; area" newline="True"/>
+        </body>
+    </function>
+    <function name="Circle" type="Real" variable="Area">
+        <parameters>
+            <parameter name="Radius" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <comment text="This function has one parameter called radius. It acts like a local variable that is assigned when the function is called."/>
+            <declare name="Area" type="Real" array="False" size=""/>
+            <assign variable="area" expression="pi*radius^2"/>
+            <comment text="This function returns the contents of the area variable"/>
+        </body>
+    </function>
+    <function name="Main1" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+    <function name="Main2" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <output expression="&quot;input the radius of the circle&quot;" newline="True"/>
+            <input variable="x"/>
+            <comment text="the flollowing will call the circle function ussing the value the user enterd.&#13;&#10;&#13;&#10;notice that this variable is called &quot;x&quot; while the function uses &quot;radius&quot;.The value of &quot;x&quot; is passed to the function."/>
+            <output expression="&quot;area is&quot;&amp;Circle(x)" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
